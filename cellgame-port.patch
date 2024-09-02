@@ -1,5 +1,5 @@
 diff --git a/activity.py b/activity.py
-index 8027afa..cc62d86 100644
+index f84da99..b40c4f2 100644
 --- a/activity.py
 +++ b/activity.py
 @@ -22,16 +22,18 @@ from gi.repository import Gtk
@@ -45,3 +45,11 @@ index 8027afa..cc62d86 100644
          toolbar_box.toolbar.insert(activity_button, -1)
          activity_button.show()
  
+@@ -65,7 +72,6 @@ class Activity(activity.Activity):
+         stop_button.show()
+         stop_button.connect('clicked', self._stop_cb)
+ 
+-        self.show_all()
+ 
+     def _stop_cb(self, button):
+         self.game.running = False
